@@ -40,4 +40,4 @@ class MyClient(discord.Client):
                     break
 
 client = MyClient()
-client.run('OTczNjU5NzMwMTI1OTE0MTcz.GXy3_C.2vFE73RluCapXDHq6o7YmYgC76Pokk8VOZnxgI')
+client.run('')
