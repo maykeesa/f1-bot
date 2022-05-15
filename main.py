@@ -1,5 +1,4 @@
 import discord
-from discord.ext import commands
 import f1api
 
 class MyClient(discord.Client):
