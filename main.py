@@ -15,28 +15,33 @@ class MyClient(discord.Client):
 
         # !construtores
         elif message.content == '!construtores':
-            l = 0
             await message.channel.send(f'``` OS CONSTRUTORES DE 2022: ```')
-            for i in f1api.construtoresAtual():
-                for j in range(1):
-                    listaNacionalidadeConstrutores = f1api.nacionalidadeConstrutores()
-                    await message.channel.send(f'** {i} **  - *** {listaNacionalidadeConstrutores[l]} ***')
-                    l += 1
-                    break
+            qtdConstrutores = len(f1api.construtoresAtual())
+            for i in range(qtdConstrutores):
+                listaConstrutores = f1api.construtoresAtual()
+                listaNacionalidadeConstrutores = f1api.nacionalidadeConstrutores()
+                await message.channel.send(f'** {listaConstrutores[i]} **  - ** {listaNacionalidadeConstrutores[i]} **')
         
         # !pilotos
         elif message.content == '!pilotos':
-            l = 0
-            await message.channel.send(f'``` OS PILOTOS DE 2022: ```\n')
-            for i in f1api.pilotosName():
-                for j in range(1):
-                    listaPilotosCode = f1api.pilotosCode()
-                    listaPilotosNumber = f1api.pilotosNumber()
-                    listaPilotosFamily = f1api.pilotosFamilyName()
-                    listaPilotosNacionalidade = f1api.pilotosNacionalidade()
-                    await message.channel.send(f'** {listaPilotosNumber[l]} ** - ** {listaPilotosCode[l]} ** - ** {i} {listaPilotosFamily[l]} ** - ** {listaPilotosNacionalidade[l]} **')
-                    l += 1
-                    break
+            await message.channel.send(f'``` OS PILOTOS DE 2022: ```')
+            qtdPilotos = len(f1api.pilotosName())
+            for i in range(qtdPilotos):
+                listaPilotosNome = f1api.pilotosName()
+                listaPilotosCode = f1api.pilotosCode()
+                listaPilotosNumber = f1api.pilotosNumber()
+                listaPilotosFamily = f1api.pilotosFamilyName()
+                listaPilotosNacionalidade = f1api.pilotosNacionalidade()
+                await message.channel.send(f'** {listaPilotosNumber[i]} ** - ** {listaPilotosCode[i]} ** - ** {listaPilotosNome[i]} {listaPilotosFamily[i]} ** - ** {listaPilotosNacionalidade[i]} **')
+        
+        # !circuitos
+        elif message.content == '!circuitos':
+            await message.channel.send(f'``` OS CIRCUITOS DE 2022: ```')
+            qtdCircuitos = len(f1api.circuitosAtual())
+            for i in range(qtdCircuitos):
+                listaCircuitosAtual = f1api.circuitosAtual()
+                listaCircuitosLoc = f1api.circuitosLocalidade()
+                await message.channel.send(f'** {listaCircuitosAtual[i]} ** - ** {listaCircuitosLoc[i]} **')
 
 client = MyClient()
-client.run('OTczNjU5NzMwMTI1OTE0MTcz.GXy3_C.2vFE73RluCapXDHq6o7YmYgC76Pokk8VOZnxgI')
+client.run('')
