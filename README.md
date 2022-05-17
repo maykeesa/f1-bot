@@ -18,6 +18,7 @@ Comando ```!construtores```
   - !qualificacao
   - !resultado
   - !equipes
+  - !circuitos
 * Inserir emojis
 * Upar em um servidor 
 
