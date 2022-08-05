@@ -3,22 +3,33 @@
 
 Comando ```!pilotos```
 
-![image](https://cdn.discordapp.com/attachments/973660650041638922/975494300416761956/rounded-in-photoretrica.png)
+![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118594029469736/1.png)
 
 Comando ```!construtores```
 
-![image](https://cdn.discordapp.com/attachments/973660650041638922/975495322916757576/rounded-in-photoretrica_1.png)
+![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118595476488223/5.png)
 
+Comando ```!circuitos```
+
+![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118595820429413/6.png)
+
+Comando ```!calendario```
+
+![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118594344034345/2.png)
+
+Comando ```!quali```
+
+![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118594658598993/3.png)
+
+Comando ```!corrida```
+
+![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118595107409960/4.png)
 
 * <h2> Obejtivos: </h2>
 * Traduzir para português
 * Inserir mais comandos
-  - !corrida
-  - !Q1 , Q2 e Q3
-  - !qualificacao
-  - !resultado
   - !equipes
-  - !circuitos
+  - !campeonato
 * Inserir emojis
 * Upar em um servidor 
 
