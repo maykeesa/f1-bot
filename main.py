@@ -16,6 +16,68 @@ async def on_message(message):
     print(f'Message from {message.author}: {message.content}')
     await bot.process_commands(message)
 
+listaCampPilotosEmbed = []
+
+#!campPilotos
+@bot.command(name="campPilotos")
+async def campPilotos(message):
+    qtdPilotos = len(api.campPilotoNome())
+    listaCampPilotosPos = api.campPilotosPosicao()
+    listaCampPilotosNome = api.campPilotoNome()
+    listaCampPilotosSobrenome = api.campPilotoSobrenome()
+    listaCampPilotosPontos = api.campPilotoPontos()
+    listaCampPilotosWins = api.campPilotoVitoria()
+    listaCampPilotoConstrutores = api.campPilotoConstrutores()
+
+    for i in range(qtdPilotos):
+        listaCampPilotosEmbed.append(f'{listaCampPilotosPos[i]} - {listaCampPilotosNome[i]} {listaCampPilotosSobrenome[i]} - {listaCampPilotoConstrutores[i]} - {listaCampPilotosPontos[i]} Pontos')
+    await embedCampPilotos(message)
+    listaCampPilotosEmbed.clear()
+
+#Embed do !campPilotos
+async def embedCampPilotos(ctx):
+    embed = discord.Embed(
+        title=f"F1 {anoAtual}: ",
+        color=0xFF0000,
+    )
+
+    embed.set_author(name= bot.user.name, icon_url= bot.user.avatar_url)
+    f1Icon = "https://cdn.discordapp.com/attachments/973660650041638922/977429140414279700/f1logo.png"
+    embed.set_thumbnail(url=f1Icon)
+    embed.add_field(name=":trophy: - Campeonato de Pilotos: ", value="\n".join(listaCampPilotosEmbed)) 
+    embed.set_footer(text="Feito por " + bot.user.name, icon_url= bot.user.avatar_url)
+    await ctx.send(embed=embed)
+
+listaCampConstrutoresEmbed = []
+
+#!campConstrutores
+@bot.command(name="campConstrutores")
+async def campConstrutores(message):
+    qtdConstrutores = len(api.campPosicaoConstrutores())
+    listaCampConstrutoresPos = api.campPosicaoConstrutores()
+    listaCampConstrutoresNome = api.campConstrutoresNome()
+    listaCampConstrutoresPontos = api.campConstrutoresPontos()
+    listaCampConstrutoresWins = api.campConstrutoresWins()
+
+    for i in range(qtdConstrutores):
+        listaCampConstrutoresEmbed.append(f'{listaCampConstrutoresPos[i]} - {listaCampConstrutoresNome[i]} - {listaCampConstrutoresPontos[i]} Pontos - {listaCampConstrutoresWins[i]} Vitórias')
+    await embedCampConstrutores(message)
+    listaCampConstrutoresEmbed.clear()
+
+#Embed do !campConstrutores
+async def embedCampConstrutores(ctx):
+    embed = discord.Embed(
+        title=f"F1 {anoAtual}: ",
+        color=0xFF0000,
+    )
+
+    embed.set_author(name= bot.user.name, icon_url= bot.user.avatar_url)
+    f1Icon = "https://cdn.discordapp.com/attachments/973660650041638922/977429140414279700/f1logo.png"
+    embed.set_thumbnail(url=f1Icon)
+    embed.add_field(name=":trophy: - Campeonato de Construtores: ", value="\n".join(listaCampConstrutoresEmbed)) 
+    embed.set_footer(text="Feito por " + bot.user.name, icon_url= bot.user.avatar_url)
+    await ctx.send(embed=embed)
+
 listaCorridaEmbed = []
 
 #!corrida
@@ -195,4 +257,4 @@ async def embedCalendario(ctx):
     await ctx.send(embed=embed)
 
 
-bot.run('OTczNjU5NzMwMTI1OTE0MTcz.GV49S-._nhq9X77GAO2AQ4WScO9z774TVCawmObZiISCU')
+bot.run('')

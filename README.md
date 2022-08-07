@@ -25,11 +25,18 @@ Comando ```!corrida```
 
 ![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118595107409960/4.png)
 
+Comando ```!campPilotos```
+
+![image](https://cdn.discordapp.com/attachments/973660650041638922/1005899710554460211/1.png)
+
+Comando ```!campConstrutores```
+
+![image](https://cdn.discordapp.com/attachments/973660650041638922/1005899710889992192/2.png)
+
 * <h2> Obejtivos: </h2>
 * Traduzir para português
 * Inserir mais comandos
   - !equipes
-  - !campeonato
 * Inserir emojis
 * Upar em um servidor 
 

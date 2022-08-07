@@ -26,6 +26,13 @@ qualiJson = dataQuali.json()
 dataCalendario = requests.get(f'http://ergast.com/api/f1/2022.json')
 calendarioJson = dataCalendario.json()
 
+dataCampPilotos = requests.get(f'http://ergast.com/api/f1/{anoAtual}/driverStandings.json')
+campeonatoPiJson = dataCampPilotos.json()
+
+dataCampConstrutores = requests.get(f'http://ergast.com/api/f1/2022/constructorStandings.json')
+campeonatoCoJson = dataCampConstrutores.json()
+
+
 #Quantidades de Construtores, Pilotos e Circuitos para utlizar nas funções
 qtdPilotos = int(pilotosJson['MRData']["total"])
 qtdConstrutores = int(construtoresJson['MRData']["total"])
@@ -53,6 +60,14 @@ qualiResultado = quali[0]['QualifyingResults']
 
 calendarioTabela = calendarioJson['MRData']["RaceTable"]
 calendario = calendarioTabela['Races']
+
+campConsTabela = campeonatoCoJson['MRData']["StandingsTable"]
+campConsLista = campConsTabela['StandingsLists']
+campeonatoCons = campConsLista[0]['ConstructorStandings']
+
+campPilotoTabela = campeonatoPiJson['MRData']["StandingsTable"]
+campPilotoLista = campPilotoTabela['StandingsLists']
+campeonatoPiloto = campPilotoLista[0]['DriverStandings']
 
 # CONSTRUTORES
 
@@ -198,7 +213,7 @@ def corridaPontos():
 
 	return listCorridaPontos
 
-#Lista das posições por ordem
+#Lista de 1 a 20
 def corridaPosicao():
 	listPosicao = []
 
@@ -254,6 +269,7 @@ def qualiTempo():
 
 # CALENDARIO 
 
+#Lista dos nomes dos GP's do calendario
 def calendarioGP():
 	listCalendarioGP = []
 
@@ -263,6 +279,7 @@ def calendarioGP():
 
 	return listCalendarioGP
 
+#Lista das datas dos GP's do calendario
 def calendarioData():
 	listCalendarioData = []
 
@@ -279,6 +296,7 @@ def calendarioData():
 
 	return listCalendarioData
 
+#Lista da quantidade de corridas
 def calendarioQtdCorridas():
 	listCorridas = []
 
@@ -287,10 +305,107 @@ def calendarioQtdCorridas():
 
 	return listCorridas
 
-# CAMPEONATO
+# CAMPEONATO DE CONSTRUTORES
 
+#Lista de 1 a 10
+def campPosicaoConstrutores():
+	listPosicao = []
 
+	for i in range(qtdConstrutores):
+		listPosicao.append(i + 1)
 
+	return listPosicao
+
+#Lista dos nomes dos construtores em ordem
+def campConstrutoresNome():
+	listConstrutores = []
+
+	for i in range(qtdConstrutores):
+		construtor = campeonatoCons[i]['Constructor']
+		listConstrutores.append(construtor["name"])
+
+	return listConstrutores
+
+#Lista dos pontos dos contrutores
+def campConstrutoresPontos():
+	listConstrutoresPontos = []
+
+	for i in range(qtdConstrutores):
+		listConstrutoresPontos.append(campeonatoCons[i]['points'])
+
+	return listConstrutoresPontos
+
+#Lista de vitorias dos contrutores
+def campConstrutoresWins():
+	listConstrutoresWins = []
+
+	for i in range(qtdConstrutores):
+		listConstrutoresWins.append(campeonatoCons[i]['wins'])
+
+	return listConstrutoresWins
+
+# CAMPEONATO DE PILOTOS
+
+#Lista dos nomes dos pilotos
+def campPilotoNome():
+	listPilotosNome = []
+
+	for i in range(qtdPilotos):
+		piloto = campeonatoPiloto[i]['Driver']
+		listPilotosNome.append(piloto["givenName"])
+
+	return listPilotosNome
+
+#Lista dos sobrenomes dos pilotos
+def campPilotoSobrenome():
+	listPilotosSobrenome = []
+
+	for i in range(qtdPilotos):
+		piloto = campeonatoPiloto[i]['Driver']
+		listPilotosSobrenome.append(piloto["familyName"])
+
+	return listPilotosSobrenome	
+
+#Lista dos pontos dos pilotos
+def campPilotoPontos():
+	listPilotosPontos = []
+
+	for i in range(qtdPilotos):
+		pilotoPontos = campeonatoPiloto[i]['points']
+		listPilotosPontos.append(pilotoPontos)
+
+	return listPilotosPontos	
+
+#Lista da quantidade de vitórias dos pilotos
+def campPilotoVitoria():
+	listPilotosVitoria = []
+
+	for i in range(qtdPilotos):
+		pilotoWins = campeonatoPiloto[i]['wins']
+		listPilotosVitoria.append(pilotoWins)
+
+	return listPilotosVitoria
+
+#Lista dos construtores dos pilotos
+def campPilotoConstrutores():
+	listPilotosConstrutores = []
+
+	for i in range(qtdPilotos):
+		pilotoConstrutor = campeonatoPiloto[i]['Constructors']
+		listPilotosConstrutores.append(pilotoConstrutor[0]["name"])
+
+	return listPilotosConstrutores
+
+#Lista da quantidade de pilotos no campeonato
+def campPilotosPosicao():
+	listPilotosPos = []
+
+	qtdPilotosCamp = int(campeonatoPiJson['MRData']["total"])
+
+	for i in range(qtdPilotosCamp):
+		listPilotosPos.append(i + 1)
+
+	return listPilotosPos
 
 if __name__ == "__main__":
-	print(qtdPilotos)
+	print(campPilotosPosicao())
