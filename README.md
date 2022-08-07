@@ -1,5 +1,6 @@
 # Formula 1 - Bot 🏎️
 * <h2> Bot de Discord que utiliza dados de uma API de F1</h2>
+API Utilizada: [Link](https://postman.com/maintenance-astronomer-29796265/workspace/f1-api/documentation/19328871-63c4a82c-ae84-4a24-a58b-bd8a408b1c4e)
 
 Comando ```!pilotos```
 
