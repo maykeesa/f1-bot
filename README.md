@@ -19,7 +19,7 @@ python get-pip.py
 pip install requests
 ```
 
-<h2> Obejtivos: </h2>
+<h2> 🎯 Obejtivos: </h2>
 
 * Traduzir para português
 * Inserir mais comandos
@@ -27,7 +27,7 @@ pip install requests
 * Inserir emojis
 * Upar em um servidor 
 
-<h2> Comandos: </h2>
+<h2> ⌨️ Comandos: </h2>
 
 Comando ```!pilotos```
 
