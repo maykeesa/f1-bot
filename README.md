@@ -1,6 +1,33 @@
 # Formula 1 - Bot 🏎️
-* <h2> Bot de Discord que utiliza dados de uma API de F1</h2>
-API Utilizada: [Link](https://postman.com/maintenance-astronomer-29796265/workspace/f1-api/documentation/19328871-63c4a82c-ae84-4a24-a58b-bd8a408b1c4e)
+* Bot do Discord que retorna os dados do atual campeonato de F1 
+
+<br>
+
+## 💻 Pré-requisitos
+
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+* Python 3
+* Biblioteca: ```requests```
+
+## 🚀 Instalando a biblioteca
+
+Para instalar a biblioteca é necessário o ```pip```, siga estas etapas no terminal:
+
+```
+python get-pip.py
+
+pip install requests
+```
+
+<h2> Obejtivos: </h2>
+
+* Traduzir para português
+* Inserir mais comandos
+  - !equipes
+* Inserir emojis
+* Upar em um servidor 
+
+<h2> Comandos: </h2>
 
 Comando ```!pilotos```
 
@@ -34,11 +61,6 @@ Comando ```!campConstrutores```
 
 ![image](https://cdn.discordapp.com/attachments/973660650041638922/1005899710889992192/2.png)
 
-* <h2> Obejtivos: </h2>
-* Traduzir para português
-* Inserir mais comandos
-  - !equipes
-* Inserir emojis
-* Upar em um servidor 
+API Utilizada: [Link](https://postman.com/maintenance-astronomer-29796265/workspace/f1-api/documentation/19328871-63c4a82c-ae84-4a24-a58b-bd8a408b1c4e)
 
 _obs: Todos esses comandos serão respectivos ao atual ano que for executado e a última corrida ocorrida_
