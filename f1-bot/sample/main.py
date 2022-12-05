@@ -62,4 +62,4 @@ async def calendario(message):
     listaCalendarioEmbed = formatting.calendario()
     await embed.calendario(message, listaCalendarioEmbed, bot)
 
-bot.run('OTczNjU5NzMwMTI1OTE0MTcz.GOPoHI.0GRQ1sQX1z9_sf_CM48L2eysUUANZzkcL934E4')
+bot.run('')
