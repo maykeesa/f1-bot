@@ -34,7 +34,8 @@ def corridaResultado() -> dict:
 
 def corridaNome() -> dict:
     corridaTabela = corridaJson['MRData']["RaceTable"]
-    corrida = corridaTabela['Races']
+    races = corridaTabela['Races'][0]
+    return races["raceName"]
 
 def quali() -> dict:
     qualiTabela = qualiJson['MRData']["RaceTable"]
@@ -71,3 +72,9 @@ def qtdPilotosCorrida() -> int:
 
 def qtdPilotosQuali() -> int:
     return int(qualiJson['MRData']["total"])
+
+def qtdCalendario() -> int:
+    return int(calendarioJson['MRData']["total"])
+
+if __name__ == '__main__':
+    print(corridaNome())

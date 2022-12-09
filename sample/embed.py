@@ -1,8 +1,9 @@
 from datetime import date
-import api
+import keys
 import discord
 
 anoAtual = date.today().year
+corridaGP = str(keys.corridaNome())
 
 #Embed do !campPilotos
 async def campPilotos(ctx, listaCampPilotos: list, bot):
@@ -21,7 +22,7 @@ async def campPilotos(ctx, listaCampPilotos: list, bot):
 #Embed do !campConstrutores
 async def campConstrutores(ctx, listaCampConstrutores: list, bot):
     embed = discord.Embed(
-        title=f"F1 {anoAtual}: ",
+        title=f"F1 {anoAtual} ",
         color=0xFF0000,
     )
 
@@ -35,7 +36,7 @@ async def campConstrutores(ctx, listaCampConstrutores: list, bot):
 #Embed do !corrida
 async def corrida(ctx, listaCorrida: list, bot):
     embed = discord.Embed(
-        title=f"{api.corridaGP()}: ",
+        title=f"{corridaGP} ",
         color=0xFF0000,
     )
 
@@ -49,7 +50,7 @@ async def corrida(ctx, listaCorrida: list, bot):
 #Embed do !quali
 async def quali(ctx, listaQuali: list, bot):
     embed = discord.Embed(
-        title=f"{api.corridaGP()} ",
+        title=f"{corridaGP}: ",
         color=0xFF0000,
     )
 

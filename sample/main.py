@@ -17,49 +17,49 @@ async def on_message(message):
 #!campPilotos
 @bot.command(name="campPilotos")
 async def campPilotos(message):
-    listaCampPilotosEmbed = formatting.campPilotos()
+    listaCampPilotosEmbed = formatting.campPilotosComando()
     await embed.campPilotos(message, listaCampPilotosEmbed, bot)
 
 #!campConstrutores
 @bot.command(name="campConstrutores")
 async def campConstrutores(message):
-    listaCampConstrutoresEmbed = formatting.campConstrutores() 
+    listaCampConstrutoresEmbed = formatting.campConstrutoresComando() 
     await embed.campConstrutores(message, listaCampConstrutoresEmbed, bot)
 
 #!corrida
 @bot.command(name="corrida")
 async def corrida(message):
-    listaCorridaEmbed = formatting.corrida()
+    listaCorridaEmbed = formatting.corridaComando()
     await embed.corrida(message, listaCorridaEmbed, bot)
 
 #!quali
 @bot.command(name="quali")
 async def quali(message):
-    listaQualiEmbed = formatting.quali()  
+    listaQualiEmbed = formatting.qualiComando()  
     await embed.quali(message, listaQualiEmbed, bot)
 
 #!construtores
 @bot.command(name="construtores")
 async def construtores(message):
-    listaConstrutores = formatting.construtores()
+    listaConstrutores = formatting.construtoresComando()
     await embed.construtores(message, listaConstrutores, bot)
 
 #!pilotos        
 @bot.command(name="pilotos")
 async def pilotos(message):
-    listaPilotosEmbed = formatting.pilotos()
+    listaPilotosEmbed = formatting.pilotosComando()
     await embed.pilotos(message, listaPilotosEmbed, bot)
 
 #!circuitos
 @bot.command(name="circuitos")
 async def circuitos(message):
-    listaCircuitosEmbed = formatting.circuitos()
+    listaCircuitosEmbed = formatting.circuitosComando()
     await embed.circuito(message, listaCircuitosEmbed, bot)
 
 #!calendario
 @bot.command(name="calendario")
 async def calendario(message): 
-    listaCalendarioEmbed = formatting.calendario()
+    listaCalendarioEmbed = formatting.calendarioComando()
     await embed.calendario(message, listaCalendarioEmbed, bot)
 
-bot.run('')
+bot.run('OTczNjU5NzMwMTI1OTE0MTcz.GDc9W2.znsQRiBoPAV_qOr1gLOWIn3BIlw651NDxN_LbM')
