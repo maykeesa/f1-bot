@@ -9,7 +9,7 @@ qtdPilotos = keys.qtdPilotos()
 # PILOTOS
 
 #Lista dos nomes dos atuais pilotos do campeonato de f1 - ex: Max
-def pilotosNome():
+def nome():
 	listPilotos = []
 
 	for i in pilotos[0:qtdPilotos]:
@@ -18,7 +18,7 @@ def pilotosNome():
 	return listPilotos
 
 #Lista dos sobrenomes dos atuais pilotos do campeonato de F1 - ex: Verstappen
-def pilotosSobrenome():
+def sobrenome():
 	listPilotosFamily = []
 
 	for i in pilotos[0:qtdPilotos]:
@@ -27,7 +27,7 @@ def pilotosSobrenome():
 	return listPilotosFamily
 
 #Lista dos code dos atuais pilotos do campeonato de F1 - ex: VER
-def pilotosCodigo():
+def codigo():
 	listPilotosCode = []
 
 	for i in pilotos[0:qtdPilotos]:
@@ -36,7 +36,7 @@ def pilotosCodigo():
 	return listPilotosCode
 
 #Lista dos números dos atuais pilotos do campeonato de F1 - ex: 33
-def pilotosNumero():
+def numero():
 	listPilotosNumber = []
 
 	# Caso o número do piloto seja apenas 1 dígitos, ele adiciona um 0 na frente do dígito
@@ -53,7 +53,7 @@ def pilotosNumero():
 	return listPilotosNumber
 
 #Lista das nacionalidades dos atuais pilotos do compeonato de F1 - ex: Dutch
-def pilotosNacionalidade():
+def nacionalidade():
 	listPilotosNacionalidade = []
 
 	for i in pilotos[0:qtdPilotos]:

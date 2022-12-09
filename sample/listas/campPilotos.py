@@ -9,7 +9,7 @@ qtdPilotos = keys.qtdPilotos()
 # CAMPEONATO DE PILOTOS
 
 #Lista dos nomes dos pilotos
-def campPilotoNome():
+def nome():
 	listPilotosNome = []
 
 	for i in range(qtdPilotos):
@@ -19,7 +19,7 @@ def campPilotoNome():
 	return listPilotosNome
 
 #Lista dos sobrenomes dos pilotos
-def campPilotoSobrenome():
+def sobrenome():
 	listPilotosSobrenome = []
 
 	for i in range(qtdPilotos):
@@ -29,7 +29,7 @@ def campPilotoSobrenome():
 	return listPilotosSobrenome	
 
 #Lista dos pontos dos pilotos
-def campPilotoPontos():
+def pontos():
 	listPilotosPontos = []
 
 	for i in range(qtdPilotos):
@@ -39,7 +39,7 @@ def campPilotoPontos():
 	return listPilotosPontos	
 
 #Lista da quantidade de vitórias dos pilotos
-def campPilotoVitoria():
+def vitoria():
 	listPilotosVitoria = []
 
 	for i in range(qtdPilotos):
@@ -49,7 +49,7 @@ def campPilotoVitoria():
 	return listPilotosVitoria
 
 #Lista dos construtores dos pilotos
-def campPilotoConstrutores():
+def construtores():
 	listPilotosConstrutores = []
 
 	for i in range(qtdPilotos):
@@ -59,7 +59,7 @@ def campPilotoConstrutores():
 	return listPilotosConstrutores
 
 #Lista da quantidade de pilotos no campeonato
-def campPilotosPosicao():
+def posicao():
 	listPilotosPos = []
 
 	for i in range(qtdPilotos):

@@ -17,14 +17,14 @@ def campPilotosComando() -> list:
     listaCampPilotos = []
 
     qtdPilotos = keys.qtdPilotos()
-    listaCampPilotosPos = campPilotos.campPilotosPosicao()
-    listaCampPilotosNome = campPilotos.campPilotoNome()
-    listaCampPilotosSobrenome = campPilotos.campPilotoSobrenome()
-    listaCampPilotosPontos = campPilotos.campPilotoPontos()
-    listaCampPilotoConstrutores = campPilotos.campPilotoConstrutores()
+    listaPos = campPilotos.posicao()
+    listaNome = campPilotos.nome()
+    listaSobrenome = campPilotos.sobrenome()
+    listaConstrutores = campPilotos.construtores()
+    listaPontos = campPilotos.pontos()
 
     for i in range(qtdPilotos):
-        listaCampPilotos.append(f'{listaCampPilotosPos[i]} - {listaCampPilotosNome[i]} {listaCampPilotosSobrenome[i]} - {listaCampPilotoConstrutores[i]} - {listaCampPilotosPontos[i]} Pontos')
+        listaCampPilotos.append(f'{listaPos[i]} - {listaNome[i]} {listaSobrenome[i]} - {listaConstrutores[i]} - {listaPontos[i]} Pontos')
 
     return listaCampPilotos
 
@@ -34,13 +34,13 @@ def campConstrutoresComando() -> list:
     listaCampConstrutores = []
 
     qtdConstrutores = keys.qtdConstrutores()
-    listaCampConstrutoresPos = campConstrutores.campPosicaoConstrutores()
-    listaCampConstrutoresNome = campConstrutores.campConstrutoresNome()
-    listaCampConstrutoresPontos = campConstrutores.campConstrutoresPontos()
-    listaCampConstrutoresWins = campConstrutores.campConstrutoresWins()
+    listaPos = campConstrutores.posicao()
+    listaNome = campConstrutores.nome()
+    listaPontos = campConstrutores.pontos()
+    listaWins = campConstrutores.wins()
 
     for i in range(qtdConstrutores):
-        listaCampConstrutores.append(f'{listaCampConstrutoresPos[i]} - {listaCampConstrutoresNome[i]} - {listaCampConstrutoresPontos[i]} Pontos - {listaCampConstrutoresWins[i]} Vitórias')
+        listaCampConstrutores.append(f'{listaPos[i]} - {listaNome[i]} - {listaPontos[i]} Pontos - {listaWins[i]} Vitórias')
 
     return listaCampConstrutores
 
@@ -49,14 +49,14 @@ def corridaComando() -> list:
     listaCorrida = []
 
     qtdPilotos = keys.qtdPilotosCorrida()
-    listaCorridaPosicao = corrida.corridaPosicao()
-    listaCorridaNome = corrida.corridaNome()
-    listaCorridaSobrenome = corrida.corridaSobrenome()
-    listaCorridaConstrutores = corrida.corridaConstrutores()
-    listaCorridaPontos = corrida.corridaPontos()
+    listaPosicao = corrida.posicao()
+    listaNome = corrida.nome()
+    listaSobrenome = corrida.sobrenome()
+    listaConstrutores = corrida.construtores()
+    listaPontos = corrida.pontos()
 
     for i in range(qtdPilotos):
-        listaCorrida.append(f'{listaCorridaPosicao[i]} - {listaCorridaNome[i]} {listaCorridaSobrenome[i]} - {listaCorridaConstrutores[i]} - {listaCorridaPontos[i]}')
+        listaCorrida.append(f'{listaPosicao[i]} - {listaNome[i]} {listaSobrenome[i]} - {listaConstrutores[i]} - {listaPontos[i]}')
 
     return listaCorrida  
 
@@ -65,14 +65,14 @@ def qualiComando() -> list:
     listaQuali = []
 
     qtdPilotos = keys.qtdPilotosQuali()
-    listaQualiPosicao = corrida.corridaPosicao()
-    listaQualiNome = quali.qualiNome()
-    listaQualiSobrenome = quali.qualiSobrenome()
-    listaQualiConstrutores = quali.qualiConstrutores()
-    listaQualiTempo = quali.qualiTempo()
+    listaPosicao = corrida.posicao()
+    listaNome = quali.nome()
+    listaSobrenome = quali.sobrenome()
+    listaConstrutores = quali.construtores()
+    listaTempo = quali.tempo()
 
     for i in range(qtdPilotos):
-        listaQuali.append(f'{listaQualiPosicao[i]} - {listaQualiNome[i]} {listaQualiSobrenome[i]} - {listaQualiConstrutores[i]} - {listaQualiTempo[i]}')
+        listaQuali.append(f'{listaPosicao[i]} - {listaNome[i]} {listaSobrenome[i]} - {listaConstrutores[i]} - {listaTempo[i]}')
 
     return listaQuali
 
@@ -81,11 +81,11 @@ def construtoresComando() -> list:
     listaConstrutoresMain = []
 
     qtdConstrutores = keys.qtdConstrutores()
-    listaConstrutores = construtores.construtoresAtual()
-    listaNacionalidadeConstrutores = construtores.construtoresNacionalidade()
+    listaNome = construtores.nome()
+    listaNacionalidade = construtores.nacionalidade()
 
     for i in range(qtdConstrutores):
-        listaConstrutoresMain.append(f'{listaConstrutores[i]} - {listaNacionalidadeConstrutores[i]}')
+        listaConstrutoresMain.append(f'{listaNome[i]} - {listaNacionalidade[i]}')
 
     return listaConstrutoresMain
 
@@ -94,14 +94,14 @@ def pilotosComando() -> list:
     listaPilotos = []
 
     qtdPilotos = keys.qtdPilotos()
-    listaPilotosNome = pilotos.pilotosNome()
-    listaPilotosCode = pilotos.pilotosCodigo()
-    listaPilotosNumber = pilotos.pilotosNumero()
-    listaPilotosFamily = pilotos.pilotosSobrenome()
-    listaPilotosNacionalidade = pilotos.pilotosNacionalidade()
+    listaNumero = pilotos.numero()
+    listaCodigo = pilotos.codigo()
+    listaNome = pilotos.nome()
+    listaFamilia = pilotos.sobrenome()
+    listaNacionalidade = pilotos.nacionalidade()
 
     for i in range(qtdPilotos):
-        listaPilotos.append(f'{listaPilotosNumber[i]} - {listaPilotosCode[i]} - {listaPilotosNome[i]} {listaPilotosFamily[i]} - {listaPilotosNacionalidade[i]}')
+        listaPilotos.append(f'{listaNumero[i]} - {listaCodigo[i]} - {listaNome[i]} {listaFamilia[i]} - {listaNacionalidade[i]}')
 
     return listaPilotos
 
@@ -110,11 +110,11 @@ def circuitosComando() -> list:
     listaCircuitos = []
 
     qtdCircuitos = keys.qtdCircuitos()
-    listaCircuitosAtual = circuitos.circuitosAtual()
-    listaCircuitosLoc = circuitos.circuitosLocalidade()
+    listaNome = circuitos.nome()
+    listaLocalidade = circuitos.localidade()
 
     for i in range(qtdCircuitos):
-        listaCircuitos.append(f'{listaCircuitosLoc[i]} - {listaCircuitosAtual[i]}')
+        listaCircuitos.append(f'{listaLocalidade[i]} - {listaNome[i]}')
 
     return listaCircuitos
 
@@ -123,11 +123,14 @@ def calendarioComando() -> list:
     listaCalendario = []
     
     qtdCalendario = keys.qtdCalendario()
-    listaQtdCalendario = calendario.calendarioQtdCorridas()
-    listaCalendarioGP = calendario.calendarioGP()
-    listaCalendarioData = calendario.calendarioData()
+    listaQtdCalendario = calendario.qtdCorridas()
+    listaGP = calendario.calendarioGP()
+    listaData = calendario.datas()
 
     for i in range(qtdCalendario):
-        listaCalendario.append(f'{listaQtdCalendario[i]} - {listaCalendarioGP[i]} | {listaCalendarioData[i]}')
+        listaCalendario.append(f'{listaQtdCalendario[i]} - {listaGP[i]} | {listaData[i]}')
 
     return listaCalendario
+
+if __name__ == "__main__":
+    print(qualiComando())

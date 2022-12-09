@@ -9,7 +9,7 @@ qtdConstrutores = keys.qtdConstrutores()
 # CAMPEONATO DE CONSTRUTORES
 
 #Lista de 1 a 10
-def campPosicaoConstrutores():
+def posicao():
 	listPosicao = []
 
 	for i in range(qtdConstrutores):
@@ -18,7 +18,7 @@ def campPosicaoConstrutores():
 	return listPosicao
 
 #Lista dos nomes dos construtores em ordem
-def campConstrutoresNome():
+def nome():
 	listConstrutores = []
 
 	for i in range(qtdConstrutores):
@@ -28,7 +28,7 @@ def campConstrutoresNome():
 	return listConstrutores
 
 #Lista dos pontos dos contrutores
-def campConstrutoresPontos():
+def pontos():
 	listConstrutoresPontos = []
 
 	for i in range(qtdConstrutores):
@@ -37,7 +37,7 @@ def campConstrutoresPontos():
 	return listConstrutoresPontos
 
 #Lista de vitorias dos contrutores
-def campConstrutoresWins():
+def wins():
 	listConstrutoresWins = []
 
 	for i in range(qtdConstrutores):

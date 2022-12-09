@@ -9,7 +9,7 @@ qtdCircuitos = keys.qtdCircuitos()
 # CIRCUITOS
 
 #Lista dos circuitos atuais do campeonato de F1 - ex: Sâo Paulo
-def circuitosAtual():
+def nome():
 	listCircuitos = []
 
 	for i in circuitos[0:qtdCircuitos]:
@@ -19,7 +19,7 @@ def circuitosAtual():
 	return listCircuitos
 
 #Lista das localidados dos atuais circuitos do campeonato de F1 - ex: Brazil
-def circuitosLocalidade():
+def localidade():
 	listCircuitosLoc = []
 
 	for i in circuitos[0:qtdCircuitos]:

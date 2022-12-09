@@ -9,7 +9,7 @@ qtdConstrutores = keys.qtdConstrutores()
 # CONSTRUTORES
 
 #Lista dos atuais construtores do campeonato de F1 - ex: Red Bull
-def construtoresAtual():
+def nome():
 	listConstrutores = []
 
 	for i in construtores[0:qtdConstrutores]:
@@ -18,7 +18,7 @@ def construtoresAtual():
 	return listConstrutores
 
 #Lista da nacionalidade dos atuais construtores de F1 - ex: Austrian
-def construtoresNacionalidade():
+def nacionalidade():
 	listNacionalidadeConst = []
 
 	for i in construtores[0:qtdConstrutores]:	

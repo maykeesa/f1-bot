@@ -9,7 +9,7 @@ qtdPilotosQuali = keys.qtdPilotosQuali()
 # QUALI
 
 #Lista dos nomes dos pilotos por ordem da ultima qualificacao
-def qualiNome():
+def nome():
 	listQualiNome = []
 
 	for i in range(qtdPilotosQuali):
@@ -19,7 +19,7 @@ def qualiNome():
 	return listQualiNome	
 
 #Lista dos sobrenomes dos pilotos por ordem da ultima qualificacao
-def qualiSobrenome():
+def sobrenome():
 	listQualiSobrenome = []
 
 	for i in range(qtdPilotosQuali):
@@ -29,7 +29,7 @@ def qualiSobrenome():
 	return listQualiSobrenome
 
 #Lista dos construtores dos pilotos por ordem da ultima qualificacao
-def qualiConstrutores():
+def construtores():
 	listQualiConstrutores = []
 
 	for i in range(qtdPilotosQuali):
@@ -39,7 +39,7 @@ def qualiConstrutores():
 	return listQualiConstrutores	
 
 #Lista do tempos dos pilotos por ordem da ultima qualificação 
-def qualiTempo():
+def tempo():
 	listQualiTempo = []
 
 	for i in range(10):

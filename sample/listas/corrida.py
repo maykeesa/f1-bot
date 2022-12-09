@@ -15,7 +15,7 @@ def corridaGP() -> str:
 	return corridaGP
 
 #Lista dos nomes dos pilotos por ordem de chegada da ultima corrida
-def corridaNome():
+def nome():
 	listCorridaNome = []
 
 	for i in range(qtdPilotosCorrida):
@@ -25,7 +25,7 @@ def corridaNome():
 	return listCorridaNome
 
 #Lista dos nomes dos pilotos por ordem de chegada da ultima corrida
-def corridaSobrenome():
+def sobrenome():
 	listCorridaSobrenome = []
 
 	for i in range(qtdPilotosCorrida):
@@ -35,7 +35,7 @@ def corridaSobrenome():
 	return listCorridaSobrenome
 
 #Lista dos construtores dos pilotos por ordem de chegada
-def corridaConstrutores():
+def construtores():
 	listCorridaConstrutores = []
 
 	for i in range(qtdPilotosCorrida):
@@ -45,7 +45,7 @@ def corridaConstrutores():
 	return listCorridaConstrutores	
 
 #Lista das pontuações dos pilotos por ordem de chegada da ultima corrida
-def corridaPontos():
+def pontos():
 	listCorridaPontos = []
 
 	for i in range(qtdPilotosCorrida):
@@ -55,7 +55,7 @@ def corridaPontos():
 	return listCorridaPontos
 
 #Lista de 1 a 20
-def corridaPosicao():
+def posicao():
 	listPosicao = []
 
 	for i in range(qtdPilotosCorrida):

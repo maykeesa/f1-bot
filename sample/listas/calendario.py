@@ -20,7 +20,7 @@ def calendarioGP():
 	return listCalendarioGP
 
 #Lista das datas dos GP's do calendario
-def calendarioData():
+def datas():
 	listCalendarioData = []
 
 	for i in range(qtdCalendario):
@@ -37,7 +37,7 @@ def calendarioData():
 	return listCalendarioData
 
 #Lista da quantidade de corridas
-def calendarioQtdCorridas():
+def qtdCorridas():
 	listCorridas = []
 
 	for i in range(qtdCalendario):
