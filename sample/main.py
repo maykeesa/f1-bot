@@ -1,8 +1,10 @@
 from discord.ext import commands
 import formatting
+import discord
 import embed
 
-bot = commands.Bot("!")
+intents = discord.Intents.all()
+bot = commands.Bot(intents=intents, command_prefix="!")
 
 @bot.event
 async def on_ready():
@@ -62,4 +64,4 @@ async def calendario(message):
     listaCalendarioEmbed = formatting.calendarioComando()
     await embed.calendario(message, listaCalendarioEmbed, bot)
 
-bot.run('')
+bot.run('OTczNjU5NzMwMTI1OTE0MTcz.GuZQOd.0ljoPeeu5ycHWbbqI5L3O_AH2G4RYDB0BsIsJ4')

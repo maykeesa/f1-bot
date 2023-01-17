@@ -1,7 +1,18 @@
 import requests
 from datetime import date
 
-anoAtual = date.today().year
+def ano():
+    ano = date.today().year
+    dataPilotos = requests.get(f'http://ergast.com/api/f1/{ano}/drivers.json')
+    pilotosJson = dataPilotos.json()
+    qtdPilotos = pilotosJson['MRData']["total"]
+
+    if(qtdPilotos == "0"):
+        return date.today().year - 1
+    else:
+        return date.today().year
+
+anoAtual = ano()
 
 def construtores() -> dict:
     dataConstrutores = requests.get(f'http://ergast.com/api/f1/{anoAtual}/constructors.json')
