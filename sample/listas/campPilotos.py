@@ -1,4 +1,4 @@
-import keys
+import sample.keys as keys
 
 #Dicts
 campeonatoPiloto = keys.campPilotos()

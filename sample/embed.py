@@ -1,6 +1,6 @@
 from datetime import date
-import keys
-import dicts
+import sample.keys as keys
+import sample.dicts as dicts
 import discord
 
 anoAtual = dicts.ano()

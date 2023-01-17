@@ -2,15 +2,15 @@ import sys
 
 sys.path.insert(0, "./sample/listas")
 
-import keys
-import quali
-import corrida
-import pilotos
-import circuitos
-import calendario
-import campPilotos
-import construtores
-import campConstrutores
+import sample.keys as keys
+import sample.listas.quali as quali
+import sample.listas.corrida as corrida
+import sample.listas.pilotos as pilotos
+import sample.listas.circuitos as circuitos
+import sample.listas.calendario as calendario
+import sample.listas.campPilotos as campPilotos
+import sample.listas.construtores as construtores
+import sample.listas.campConstrutores as campConstrutores
 
 # Formatação da lista de !campPilotos
 def campPilotosComando() -> list:

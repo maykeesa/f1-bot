@@ -1,4 +1,4 @@
-import dicts
+import sample.dicts as dicts
 
 #Datas das API's de Contrutores, Pilotos, Circuitos e Resultados
 construtoresJson = dicts.construtores()

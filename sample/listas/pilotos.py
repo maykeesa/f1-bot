@@ -1,4 +1,4 @@
-import keys
+import sample.keys as keys
 
 #Dicts
 pilotos = keys.pilotos()
