@@ -1,5 +1,5 @@
-# Formula 1 - Bot 🏎️
-* Bot do Discord que retorna os dados do atual campeonato de F1 
+# Formula 1 - Bot 🏎️ | [Link do F1-Bot](https://discord.com/oauth2/authorize?client_id=973659730125914173&scope=bot&permissions=274877991936)
+* Bot do Discord que retorna os dados do atual campeonato de F1
 
 <br>
 
@@ -64,4 +64,4 @@ Comando ```!campConstrutores```
 
 API Utilizada: [Link](https://postman.com/maintenance-astronomer-29796265/workspace/f1-api/documentation/19328871-63c4a82c-ae84-4a24-a58b-bd8a408b1c4e)
 
-_obs: Todos esses comandos serão respectivos ao atual ano que for executado e a última corrida ocorrida_
+_obs: Todos esses comandos serão respectivos ao atual ano que for executado e a última corrida ocorrida, e além disso, caso não tenha tido corrida no atual ano, será exibido dados do ano anterior._
