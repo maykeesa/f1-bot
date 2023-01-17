@@ -3,23 +3,6 @@
 
 <br>
 
-## 💻 Pré-requisitos
-
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-* Python 3
-* Biblioteca: ```requests```, ```discord.py```
-
-## 🚀 Instalando a biblioteca
-
-Para instalar a biblioteca é necessário o ```pip```, siga estas etapas no terminal:
-
-```
-python get-pip.py
-
-pip install requests
-pip install discord.py
-```
-
 <h2> 🎯 Obejtivos: </h2>
 
 * Traduzir para português
