@@ -1,4 +1,4 @@
-# Formula 1 - Bot 🏎️ | [Link](https://discord.com/oauth2/authorize?client_id=973659730125914173&scope=bot&permissions=274877991936)
+# Formula 1 - Bot 🏎️ | [Link](https://discord.com/api/oauth2/authorize?client_id=973659730125914173&permissions=412317207552&scope=bot%20applications.commands)
 * Bot do Discord que retorna os dados do atual campeonato de F1
 
 <br>
