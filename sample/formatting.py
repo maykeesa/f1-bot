@@ -44,7 +44,7 @@ def campConstrutoresComando() -> list:
 
     return listaCampConstrutores
 
-# Formataão da lista de !corrida
+# Formatação da lista de !corrida
 def corridaComando() -> list:
     listaCorrida = []
 

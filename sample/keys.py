@@ -77,4 +77,4 @@ def qtdCalendario() -> int:
     return int(calendarioJson['MRData']["total"])
 
 if __name__ == '__main__':
-    print(corridaNome())
+    print(corrida())

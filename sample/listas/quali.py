@@ -42,11 +42,24 @@ def construtores():
 def tempo():
 	listQualiTempo = []
 
-	for i in range(10):
-		listQualiTempo.append(qualiResultado[i]['Q3'])
-	for i in range(5):
-		listQualiTempo.append(qualiResultado[i + 10]['Q2'])
-	for i in range(5):
-		listQualiTempo.append(qualiResultado[i + 15]['Q1'])
+	listaQ3 = qualiResultado[0:10]
+	listaQ2 = qualiResultado[10:15]
+	listaQ1 = qualiResultado[15:20]
 
-	return listQualiTempo		
+	for i in listaQ3:
+		try:
+			listQualiTempo.append(i['Q3'])
+		except:
+			listQualiTempo.append(i['Q2'])
+	for i in listaQ2:
+		try: 
+			listQualiTempo.append(i['Q2'])
+		except:
+			listQualiTempo.append(i['Q1'])
+	for i in listaQ1:
+		try:
+			listQualiTempo.append(i['Q1'])
+		except:
+			listQualiTempo.append("DNF")
+		
+	return listQualiTempo

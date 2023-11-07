@@ -1,15 +1,19 @@
+from discord import app_commands
 from discord.ext import commands
 import sample.formatting as formatting
 import discord
 import sample.embed as embed
 
 intents = discord.Intents.all()
-bot = commands.Bot(intents=intents, command_prefix="!")
-
+bot = commands.Bot(intents=intents, command_prefix="$")
 
 @bot.event
 async def on_ready():
-    print(f'Logged on as {bot.user}!')
+    print(f'Logged on as {bot.user}!') 
+    try:
+        synced = await bot.tree.sync()
+    except Exception as ex:
+        print(ex)
 
 #Log do discord
 @bot.event
@@ -17,52 +21,52 @@ async def on_message(message):
     print(f'Message from {message.author}: {message.content}')
     await bot.process_commands(message)
 
-#!campPilotos
-@bot.command(name="campPilotos")
+@bot.tree.command(name="camp-pilotos", description="Mostra o atual campeonato de pilotos")
 async def campPilotos(message):
     listaCampPilotosEmbed = formatting.campPilotosComando()
-    await embed.campPilotos(message, listaCampPilotosEmbed, bot)
+    embedFormatado = embed.campPilotos(message, listaCampPilotosEmbed, bot)
+    await message.response.send_message(embed=embedFormatado)
 
-#!campConstrutores
-@bot.command(name="campConstrutores")
+@bot.tree.command(name="camp-construtores", description="Mostra o atual campeonato de construtores")
 async def campConstrutores(message):
-    listaCampConstrutoresEmbed = formatting.campConstrutoresComando() 
-    await embed.campConstrutores(message, listaCampConstrutoresEmbed, bot)
+    listaCampConstrutoresEmbed = formatting.campConstrutoresComando()
+    embedFormatado = embed.campConstrutores(message, listaCampConstrutoresEmbed, bot)
+    await message.response.send_message(embed=embedFormatado)
 
-#!corrida
-@bot.command(name="corrida")
+@bot.tree.command(name="corrida", description="Mostra o resultado da última corrida")
 async def corrida(message):
     listaCorridaEmbed = formatting.corridaComando()
-    await embed.corrida(message, listaCorridaEmbed, bot)
+    embedFormatado = embed.corrida(message, listaCorridaEmbed, bot)
+    await message.response.send_message(embed=embedFormatado)
 
-#!quali
-@bot.command(name="quali")
+@bot.tree.command(name="qualificacao", description="Mostra o resultado da última qualificação")
 async def quali(message):
-    listaQualiEmbed = formatting.qualiComando()  
-    await embed.quali(message, listaQualiEmbed, bot)
+    listaQualiEmbed = formatting.qualiComando()
+    embedFormatado = embed.quali(message, listaQualiEmbed, bot)  
+    await message.response.send_message(embed=embedFormatado)
 
-#!construtores
-@bot.command(name="construtores")
+@bot.tree.command(name="construtores", description="Mostra todos os construtores da atual temporada")
 async def construtores(message):
     listaConstrutores = formatting.construtoresComando()
-    await embed.construtores(message, listaConstrutores, bot)
-
-#!pilotos        
-@bot.command(name="pilotos")
+    embedFormatado = embed.construtores(message, listaConstrutores, bot)
+    await message.response.send_message(embed=embedFormatado)
+     
+@bot.tree.command(name="pilotos", description="Mostra todos os pilotos da atual temporada")
 async def pilotos(message):
     listaPilotosEmbed = formatting.pilotosComando()
-    await embed.pilotos(message, listaPilotosEmbed, bot)
+    embedFormatado = embed.pilotos(message, listaPilotosEmbed, bot)
+    await message.response.send_message(embed=embedFormatado)
 
-#!circuitos
-@bot.command(name="circuitos")
+@bot.tree.command(name="circuitos", description="Mostra todos os circuitos da atual temporada")
 async def circuitos(message):
     listaCircuitosEmbed = formatting.circuitosComando()
-    await embed.circuito(message, listaCircuitosEmbed, bot)
+    embedFormatado = embed.circuitos(message, listaCircuitosEmbed, bot)
+    await message.response.send_message(embed=embedFormatado)
 
-#!calendario
-@bot.command(name="calendario")
+@bot.tree.command(name="calendario", description="Mostra o calendârio da atual temporada")
 async def calendario(message): 
     listaCalendarioEmbed = formatting.calendarioComando()
-    await embed.calendario(message, listaCalendarioEmbed, bot)
+    embedFormatado = embed.calendario(message, listaCalendarioEmbed, bot)
+    await message.response.send_message(embed=embedFormatado)
 
-bot.run('OTczNjU5NzMwMTI1OTE0MTcz.GctLIx.3ackILrKVtSZfOYjEiFb8C9YhyKOsyqCmn_A1Q')
+bot.run('')
