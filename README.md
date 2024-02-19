@@ -3,7 +3,7 @@
 
 <br>
 
-<h2> 🎯 Obejtivos: </h2>
+<h2> 🎯 Objetivos: </h2>
 
 * Traduzir para português
 * Inserir mais comandos
