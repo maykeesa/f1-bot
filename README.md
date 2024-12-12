@@ -5,45 +5,42 @@
 
 <h2> 🎯 Objetivos: </h2>
 
-* Traduzir para português
 * Inserir mais comandos
   - !equipes
 * Inserir emojis
-* Upar em um servidor 
 
 <h2> ⌨️ Comandos: </h2>
 
 Comando ```!pilotos```
 
-![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118594029469736/1.png)
+![image](https://drive.google.com/uc?export=view&id=1zwuAMHvKDpumgcjkFbehCvOdIYUq5sYk)
 
 Comando ```!construtores```
 
-![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118595476488223/5.png)
+![image](https://drive.google.com/uc?export=view&id=1P17_PvxWRV6iKbumj0oQnOAMd-waEYrL)
 
 Comando ```!circuitos```
 
-![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118595820429413/6.png)
+![image](https://drive.google.com/uc?export=view&id=1CyD6DGL954sZWZtVxWXclRJO7lbvTrJk)
 
 Comando ```!calendario```
 
-![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118594344034345/2.png)
+![image](https://drive.google.com/uc?export=view&id=12nSW3ViIq5d9unOa7d0si5AyBtE8WMQs)
 
-Comando ```!quali```
+Comando ```!quali``` | ```Sem funcionar!```
 
-![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118594658598993/3.png)
 
 Comando ```!corrida```
 
-![image](https://cdn.discordapp.com/attachments/973660650041638922/1005118595107409960/4.png)
+![image](https://drive.google.com/uc?export=view&id=1VhjUr-LfOFkfVOAxqp7GwxG2DAwHmeIF)
 
 Comando ```!campPilotos```
 
-![image](https://cdn.discordapp.com/attachments/973660650041638922/1005899710554460211/1.png)
+![image](https://drive.google.com/uc?export=view&id=1k88PBLM0TdcMZJQFawXQhZfD2TqA9gtq)
 
 Comando ```!campConstrutores```
 
-![image](https://cdn.discordapp.com/attachments/973660650041638922/1005899710889992192/2.png)
+![image](https://drive.google.com/uc?export=view&id=19DV895zXD0upWK9SV3R5fiH_54MVT_N3)
 
 API Utilizada: [Link](https://postman.com/maintenance-astronomer-29796265/workspace/f1-api/documentation/19328871-63c4a82c-ae84-4a24-a58b-bd8a408b1c4e)
 
