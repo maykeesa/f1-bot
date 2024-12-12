@@ -9,6 +9,8 @@
   - !equipes
 * Inserir emojis
 
+<br>
+
 <h2> ⌨️ Comandos: </h2>
 
 Comando ```!pilotos```
